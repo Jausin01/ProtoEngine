@@ -132,6 +132,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Inc\App.h" />
+    <ClInclude Include="Inc\AppState.h" />
     <ClInclude Include="Inc\Common.h" />
     <ClInclude Include="Inc\ProtoEngine.h" />
     <ClInclude Include="Src\Precompiled.h" />
@@ -146,6 +147,12 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Framework\Core\Core.vcxproj">
       <Project>{25d4d75f-0e80-4772-b5fa-6fbe350ce22f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Graphics\Graphics.vcxproj">
+      <Project>{892bc723-63de-4342-9c03-f5000f893a87}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Math\Math.vcxproj">
+      <Project>{3218d29f-9a6b-4688-8058-5d8fe7ab0e88}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
