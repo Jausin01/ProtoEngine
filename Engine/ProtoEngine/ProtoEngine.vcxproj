@@ -143,6 +143,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Src\ProtoEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Framework\Core\Core.vcxproj">
@@ -150,6 +151,9 @@
     </ProjectReference>
     <ProjectReference Include="..\..\Framework\Graphics\Graphics.vcxproj">
       <Project>{892bc723-63de-4342-9c03-f5000f893a87}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Input\Input.vcxproj">
+      <Project>{3629f01a-6fed-42eb-b308-e9f7f1346eaf}</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\Framework\Math\Math.vcxproj">
       <Project>{3218d29f-9a6b-4688-8058-5d8fe7ab0e88}</Project>

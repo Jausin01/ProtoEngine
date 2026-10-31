@@ -9,6 +9,7 @@ void WindowMessageHandler::Hook(HWND window, Callback cb)
 {
 	mWindow = window;
 	mPreviousCallBack = (Callback)GetWindowLongPtrA(window, GWLP_WNDPROC);
+	SetWindowLongPtrA(window, GWLP_WNDPROC, (LONG_PTR)cb);
 }
 
 void WindowMessageHandler::Unhook()
