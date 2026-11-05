@@ -133,11 +133,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DoColor.cpp" />
+    <ClCompile Include="DoColor2.cpp" />
+    <ClCompile Include="DoColor3.cpp" />
     <ClCompile Include="DoSomethingState.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DoColor.h" />
+    <ClInclude Include="DoColor2.h" />
+    <ClInclude Include="DoColor3.h" />
     <ClInclude Include="DoSomethingState.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

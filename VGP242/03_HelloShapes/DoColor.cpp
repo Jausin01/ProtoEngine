@@ -6,22 +6,36 @@ using namespace ProtoEngine::Colors;
 
 void DoColor::Initialize()
 {
-	// create a shape
-	mVertices.push_back({ { -0.5f, 0.0f, 0.0f }, Colors::Red });
-	mVertices.push_back({ { 0.0f, 0.5f, 0.0f }, Colors::Red });
-	mVertices.push_back({ { 0.5f, 0.0f, 0.0f }, Colors::Red });
+	mVertices.push_back({ { -0.9f, -0.7f, 0.3f }, Colors::Green });
+	mVertices.push_back({ { -0.9f, -0.5f, 0.3f }, Colors::Green });
+	mVertices.push_back({ { 0.9f, -0.5f, 0.3f }, Colors::Green });
 
-	mVertices.push_back({ { -0.5f, 0.0f, 0.0f }, Colors::Blue });
-	mVertices.push_back({ { -0.5f, 0.5f, 0.0f }, Colors::Blue });
-	mVertices.push_back({ { 0.0f, 0.5f, 0.0f }, Colors::Blue });
+	mVertices.push_back({ { -0.9f, -0.7f, 0.3f }, Colors::Green });
+	mVertices.push_back({ { 0.9f, -0.5f, 0.3f }, Colors::Green });
+	mVertices.push_back({ { 0.9f, -0.7f, 0.3f }, Colors::Green });
 
-	mVertices.push_back({ { -0.5f, 0.0f, 0.0f }, Colors::Blue });
-	mVertices.push_back({ { 0.5f, 0.5f, 0.0f }, Colors::Red });
-	mVertices.push_back({ { 0.0f, -0.5f, 0.0f }, Colors::Green });
+	// house body
+	mVertices.push_back({ { -0.4f, -0.5f, 0.2f }, Colors::Blue });
+	mVertices.push_back({ { -0.4f, 0.1f, 0.2f }, Colors::Green });
+	mVertices.push_back({ { 0.4f, 0.1f, 0.2f }, Colors::Green });
 
-	mVertices.push_back({ { -0.9f, 0.2f, 0.9f }, Colors::Blue });
-	mVertices.push_back({ { 0.2f, 0.5f, 0.3f }, Colors::Red });
-	mVertices.push_back({ { 0.3f, -0.5f, 0.4f }, Colors::Green });
+	mVertices.push_back({ { -0.4f, -0.5f, 0.2f }, Colors::Blue });
+	mVertices.push_back({ { 0.4f, 0.1f, 0.2f }, Colors::Green });
+	mVertices.push_back({ { 0.4f, -0.5f, 0.2f }, Colors::Blue });
+
+	// roof
+	mVertices.push_back({ { -0.5f, 0.1f, 0.2f }, Colors::Red });
+	mVertices.push_back({ { 0.0f, 0.6f, 0.2f }, Colors::Red });
+	mVertices.push_back({ { 0.5f, 0.1f, 0.2f }, Colors::Red });
+
+	// door
+	mVertices.push_back({ { -0.1f, -0.5f, 0.1f }, Colors::Red });
+	mVertices.push_back({ { -0.1f, -0.1f, 0.1f }, Colors::Red });
+	mVertices.push_back({ { 0.1f, -0.1f, 0.1f }, Colors::Red });
+
+	mVertices.push_back({ { -0.1f, -0.5f, 0.1f }, Colors::Red });
+	mVertices.push_back({ { 0.1f, -0.1f, 0.1f }, Colors::Red });
+	mVertices.push_back({ { 0.1f, -0.5f, 0.1f }, Colors::Red });
 
 	// start creating the components that communicate with GPU
 	auto device = GraphicsSystem::Get()->GetDevice();
@@ -99,7 +113,7 @@ void DoColor::Update(float deltaTime)
 {
 	if (InputSystem::Get()->IsKeyPressed(KeyCode::SPACE))
 	{
-		MainApp().ChangeState("DoSomethingState");
+		MainApp().ChangeState("DoColorState2");
 	}
 }
 

@@ -24,12 +24,24 @@
     <ClCompile Include="DoColor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DoColor2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DoColor3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DoSomethingState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DoColor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DoColor2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DoColor3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
