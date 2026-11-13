@@ -34,6 +34,42 @@ void DoColor::Initialize()
 	mVertices.push_back({ { 1.0f, 1.0f, 1.0f }, Colors::BlueViolet });
 	mVertices.push_back({ { 1.0f, -1.0f, 1.0f }, Colors::PaleGoldenrod });
 
+	// Left
+	mVertices.push_back({ { -1.0f, -1.0f,  1.0f }, Colors::Lime });
+	mVertices.push_back({ { -1.0f,  1.0f,  1.0f }, Colors::Green });
+	mVertices.push_back({ { -1.0f,  1.0f, -1.0f }, Colors::PaleGoldenrod });
+
+	mVertices.push_back({ { -1.0f, -1.0f,  1.0f }, Colors::BlueViolet });
+	mVertices.push_back({ { -1.0f,  1.0f, -1.0f }, Colors::BlueViolet });
+	mVertices.push_back({ { -1.0f, -1.0f, -1.0f }, Colors::PaleGoldenrod });
+
+	// Back
+	mVertices.push_back({ {  1.0f, -1.0f,  1.0f }, Colors::Blue });
+	mVertices.push_back({ {  1.0f,  1.0f,  1.0f }, Colors::Green });
+	mVertices.push_back({ { -1.0f,  1.0f,  1.0f }, Colors::Green });
+
+	mVertices.push_back({ {  1.0f, -1.0f,  1.0f }, Colors::GreenYellow });
+	mVertices.push_back({ { -1.0f,  1.0f,  1.0f }, Colors::Green });
+	mVertices.push_back({ { -1.0f, -1.0f,  1.0f }, Colors::Green });
+
+	// Top
+	mVertices.push_back({ { -1.0f,  1.0f, -1.0f }, Colors::Lime });
+	mVertices.push_back({ { -1.0f,  1.0f,  1.0f }, Colors::Green });
+	mVertices.push_back({ {  1.0f,  1.0f,  1.0f }, Colors::PaleGoldenrod });
+
+	mVertices.push_back({ { -1.0f,  1.0f, -1.0f }, Colors::BlueViolet });
+	mVertices.push_back({ {  1.0f,  1.0f,  1.0f }, Colors::BlueViolet });
+	mVertices.push_back({ {  1.0f,  1.0f, -1.0f }, Colors::PaleGoldenrod });
+
+	// Bottom
+	mVertices.push_back({ {  1.0f, -1.0f, -1.0f }, Colors::Blue });
+	mVertices.push_back({ {  1.0f, -1.0f,  1.0f }, Colors::Green });
+	mVertices.push_back({ { -1.0f, -1.0f,  1.0f }, Colors::Green });
+
+	mVertices.push_back({ {  1.0f, -1.0f, -1.0f }, Colors::GreenYellow });
+	mVertices.push_back({ { -1.0f, -1.0f,  1.0f }, Colors::Green });
+	mVertices.push_back({ { -1.0f, -1.0f, -1.0f }, Colors::Green });
+
 	mMeshBuffer.Initialize(mVertices.data(), sizeof(VertexPC), mVertices.size());
 	std::filesystem::path shaderPath = L"../../Assets/Shaders/DoTransform.fx";
 	mVertexShader.Initialize<VertexPC>(shaderPath);
