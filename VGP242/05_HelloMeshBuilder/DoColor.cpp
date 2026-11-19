@@ -15,7 +15,8 @@ void DoColor::Initialize()
 	//MeshPC cube = MeshBuilder::CreateCubePC(1.0f);
 	//MeshPC mesh = MeshBuilder::CreatePlanePC(1.0f, 2.0f, 0.5f, false);
 	//MeshPC mesh = MeshBuilder::CreateCylinderPC(30, 30);
-	MeshPC mesh = MeshBuilder::CreateSpherePC(30, 30, 1);
+	//MeshPC mesh = MeshBuilder::CreateSpherePC(30, 30, 1);
+	MeshPC mesh = MeshBuilder::CreatePyramidPC(4, 2, 3);
 
 
 	mMeshBuffer.Initialize(mesh);

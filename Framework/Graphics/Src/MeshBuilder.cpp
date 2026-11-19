@@ -246,3 +246,35 @@ MeshPC MeshBuilder::CreateSpherePC(int slices, int rings, float radius)
 	return mesh;
 
 }
+
+MeshPC ProtoEngine::Graphics::MeshBuilder::CreatePyramidPC(int sides, float radius, float height)
+{
+	MeshPC mesh;
+	int index = rand() % 42;
+	const float horzRotation = (Math::Constants::TwoPi / static_cast<float>(sides));
+
+	mesh.vertices.push_back({{ 0.0f,height,0.0f }, GetNextColor(index)});
+	mesh.vertices.push_back({{ 0.0f,0.0f,0.0f }, GetNextColor(index)});
+
+	for (int s = 0; s <= sides; ++s)
+	{
+		float slice = static_cast<float>(s);
+		float rotation = slice * horzRotation;
+		mesh.vertices.push_back({ {radius * sin(rotation), 0.0f,radius * cos(rotation)}, GetNextColor(index) });
+	}
+
+	for (int s = 0; s < sides; ++s)
+	{
+		int cur = 2 + s;
+		int next = 2 + ((s + 1) % sides);
+
+		mesh.indices.push_back(0);
+		mesh.indices.push_back(cur);
+		mesh.indices.push_back(next);
+
+		mesh.indices.push_back(1);
+		mesh.indices.push_back(next);
+		mesh.indices.push_back(cur);
+	}
+	return mesh;
+}

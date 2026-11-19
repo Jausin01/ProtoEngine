@@ -15,8 +15,14 @@ namespace ProtoEngine::Graphics
 		// plane
 		static MeshPC CreatePlanePC(int numRows, int numColumns, float spacing, bool horizontal = true);
 		
+		// Cylinder
 		static MeshPC CreateCylinderPC(int slices, int rings);
 
+		// sphere
 		static MeshPC CreateSpherePC(int slices, int rings, float radius);
+
+		// Pyramid.
+		static MeshPC CreatePyramidPC(int sides, float radius, float height);
+
 	};
 }
