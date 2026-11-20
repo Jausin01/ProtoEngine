@@ -33,6 +33,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shaders", "Shaders", "{9959
 	ProjectSection(SolutionItems) = preProject
 		Assets\Shaders\DoColor.fx = Assets\Shaders\DoColor.fx
 		Assets\Shaders\DoSomething.fx = Assets\Shaders\DoSomething.fx
+		Assets\Shaders\DoTexture.fx = Assets\Shaders\DoTexture.fx
 		Assets\Shaders\DoTransform.fx = Assets\Shaders\DoTransform.fx
 	EndProjectSection
 EndProject
@@ -41,6 +42,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_HelloCube", "VGP242\04_HelloCube\04_HelloCube.vcxproj", "{95D83310-39FC-4F7E-8296-7D1E0DFDE38A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_HelloMeshBuilder", "VGP242\05_HelloMeshBuilder\05_HelloMeshBuilder.vcxproj", "{823945CA-DB7F-4FF2-A59A-47569A3E477F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06_HelloTextures", "VGP242\06_HelloTextures\06_HelloTextures.vcxproj", "{C0A87F60-DD46-4570-8D7F-6266A4355FF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -138,6 +141,14 @@ Global
 		{823945CA-DB7F-4FF2-A59A-47569A3E477F}.Release|x64.Build.0 = Release|x64
 		{823945CA-DB7F-4FF2-A59A-47569A3E477F}.Release|x86.ActiveCfg = Release|Win32
 		{823945CA-DB7F-4FF2-A59A-47569A3E477F}.Release|x86.Build.0 = Release|Win32
+		{C0A87F60-DD46-4570-8D7F-6266A4355FF6}.Debug|x64.ActiveCfg = Debug|x64
+		{C0A87F60-DD46-4570-8D7F-6266A4355FF6}.Debug|x64.Build.0 = Debug|x64
+		{C0A87F60-DD46-4570-8D7F-6266A4355FF6}.Debug|x86.ActiveCfg = Debug|Win32
+		{C0A87F60-DD46-4570-8D7F-6266A4355FF6}.Debug|x86.Build.0 = Debug|Win32
+		{C0A87F60-DD46-4570-8D7F-6266A4355FF6}.Release|x64.ActiveCfg = Release|x64
+		{C0A87F60-DD46-4570-8D7F-6266A4355FF6}.Release|x64.Build.0 = Release|x64
+		{C0A87F60-DD46-4570-8D7F-6266A4355FF6}.Release|x86.ActiveCfg = Release|Win32
+		{C0A87F60-DD46-4570-8D7F-6266A4355FF6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -155,6 +166,7 @@ Global
 		{878DB3D4-C610-4D5A-9E41-7D161379D50B} = {920AB4E1-36F5-460A-B67F-EBA7F16DB07F}
 		{95D83310-39FC-4F7E-8296-7D1E0DFDE38A} = {920AB4E1-36F5-460A-B67F-EBA7F16DB07F}
 		{823945CA-DB7F-4FF2-A59A-47569A3E477F} = {920AB4E1-36F5-460A-B67F-EBA7F16DB07F}
+		{C0A87F60-DD46-4570-8D7F-6266A4355FF6} = {920AB4E1-36F5-460A-B67F-EBA7F16DB07F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2EF30C33-26DA-4154-AFB4-7B52576DE748}
